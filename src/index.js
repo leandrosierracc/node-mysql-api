@@ -5,6 +5,7 @@ import clientRoute from "./routes/clientesRoutes.js"
 
 const app = express()
 
+app.use(express.json()); // sirve para q entienda datos en json
 app.use(indexRoute)
 app.use(clientRoute)
 
